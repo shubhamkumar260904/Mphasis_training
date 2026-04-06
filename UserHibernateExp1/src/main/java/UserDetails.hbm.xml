@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!--
+
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+
+  ~
+
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+
+  -->
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!--
+
+-->
+
+<hibernate-mapping package="com.test">
+
+    <class name="UserDetails" table="userdetails">
+
+        <id name="id"> 
+
+        <generator class="increment"></generator>
+
+        </id>
+
+        <property name="user_regno"/>
+
+            
+
+        <property name="user_name"/> 
+        
+
+        <property name="user_branch"/>
+        
+		<property name="user_location"/> 
+		
+		
+
+        <property name="user_age"></property>
+
+    </class>
+
+</hibernate-mapping>
